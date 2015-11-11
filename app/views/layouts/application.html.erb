@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MyTasks</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+   <link rel="stylesheet" href="//yegor256.github.io/tacit/tacit.min.css"/>
+</head>
+<header>
+<%= link_to "/" do %>
+	<img src= "http://3.bp.blogspot.com/-z6p-zrvxM60/UzL8E1kGkrI/AAAAAAAAMNc/ShtMfgLZVFo/s1600/Roadrunner.png"  style="width: 130px;"/>
+<%end%>
+</header>
+<body>
+
+<%= yield %>
+
+</body>
+</html>

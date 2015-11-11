@@ -1,0 +1,13 @@
+
+<h1>My diary </h1>
+
+<div class="flash"><%= flash[:destroy] %></div>
+
+<p> Liste des events </p>
+<ul>
+	<% for task in @tasks %>
+		<li><a href="/tasks/<%= task.id%>"><%= task.name%></a></li>
+	<%end%>
+</ul>
+
+<%= link_to "New event" , tasks_new_path %></br>

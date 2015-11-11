@@ -1,0 +1,14 @@
+<%=form_for(@task) do |t|%>
+  <%= t.label "Event's name" %>
+  <%= t.text_field :name %>
+  <%= t.label "Date" %>
+	<%= t.date_field :date %>
+  <%= t.label "Hour" %>
+  <%= t.time_field :hour %>
+  <%= t.label "Place" %>
+  <%= t.text_field :place %>
+  <%= t.label "Description" %>
+  <%= t.text_area :description %>
+ 
+  <%= t.submit "Submit"  %> 
+  <%end%>
