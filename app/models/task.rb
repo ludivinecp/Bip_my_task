@@ -12,4 +12,12 @@ end
 def next
   Task.where(["date > ?", date]).first
 end
+
+def finish
+	@task = Task.find(params[:id])
+	if @task.date < Date.now
+		@task.delete
+	end
+end
+
 end

@@ -40,7 +40,7 @@ class TasksController < ApplicationController
 
  def delete
    @task = Task.find(params[:id])
-    @task.destroy
+    @task.delete
     flash[:destroy] = "Your event has been deleted"
     redirect_to root_path
   end
