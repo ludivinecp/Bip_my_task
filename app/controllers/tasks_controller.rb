@@ -58,6 +58,3 @@ class TasksController < ApplicationController
 end
 
 
-# catégories d'event (avec picto ds helper)
-# fleche de navigation entre les events ds show
-# delete event
