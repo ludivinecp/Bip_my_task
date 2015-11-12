@@ -19,14 +19,14 @@ class UsersController < ApplicationController
       @user = User.find(current_user.id)
   end
 
- #  def update
- #  	@user = current_user.update(user_params)
- #  	if @user
- #  		redirect_to user_path(current_user.id)
- #  	else 
- #  		render :edit
- #  	end
-	# end
+  def update
+  	@user = current_user.update(user_params)
+  	if @user
+  		redirect_to user_path(current_user.id)
+  	else 
+  		render :show
+  	end
+	end
 
 	private
 	def user_params

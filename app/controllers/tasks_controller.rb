@@ -39,6 +39,7 @@ class TasksController < ApplicationController
   end
 
  def delete
+
    @task = Task.find(params[:id])
     @task.delete
     flash[:destroy] = "Your event has been deleted"
