@@ -1,6 +1,13 @@
 Rails.application.routes.draw do
   
-root 'tasks#index'
+  root 'users#index'
+  
+  devise_for :users
+ 
+
+  get 'users/show'
+
+  get 'tasks/index'
 
   get 'tasks/new'
 

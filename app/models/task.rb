@@ -1,6 +1,7 @@
 class Task < ActiveRecord::Base
 	 validates_presence_of :name, :date
 	 belongs_to :category 
+	 belongs_to :user
 	  
 	 geocoded_by :place  
 	 after_validation :geocode        
