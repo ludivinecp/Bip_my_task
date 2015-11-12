@@ -1,7 +1,7 @@
 <div class="flash"><%= flash[:destroy] %></div>
 
 <p> Liste des events </p>
- 	<% if @tasks.nil?%>
+ 	<% if @tasks.empty?%>
     <p> Vous n'avez pas encore de tâches </p>
     <% else %>
     <ul>

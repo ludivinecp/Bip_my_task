@@ -5,7 +5,6 @@ class TasksController < ApplicationController
 
   def new
     @task = Task.new
-    @category= Category.all
   end
 
   def create
@@ -47,8 +46,14 @@ class TasksController < ApplicationController
   end
 
   def destroy
-   
-    
+  end
+
+  def month_calendar
+    @tasks = Task.all
+  end
+
+  def week_calendar
+    @tasks = Task.all
   end
 
 

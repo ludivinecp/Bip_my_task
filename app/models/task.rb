@@ -21,4 +21,10 @@ def finish
 	end
 end
 
+ def start_time
+ 	@tasks = Task.all
+ 	binding.pry
+ 	@tasks.date 
+    end
 end
+
