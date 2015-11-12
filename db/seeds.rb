@@ -7,12 +7,12 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 	
 
-# Task.create([{ nom: "Meeting with Mr Goutay"},
-# 				date: "2015-01-01"},
-# 				hour: "2000-01-01 02:01:00"},
-# 				place: "12 rue d'Alésia"},
-# 				description: "Penser à ramener les papiers du projet"},
-# 				categorie_id: "3"}
-# 			}])
+Task.create([{ name: "Meeting with Mr Goutay",
+				date: "2015-01-01",
+				hour: "2000-01-01 02:01:00",
+				place: "12 rue d'Alésia",
+				description: "Penser à ramener les papiers du projet",
+				categorie_id: "3"
+			}])
  
- 
+ ,,

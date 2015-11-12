@@ -9,6 +9,7 @@
   <%= t.text_field :place %>
   <%= t.label "Description" %>
   <%= t.text_area :description %>
+  <%= t.hidden_field :user_id, :value => current_user.id %>
  
   <%= t.submit "Submit"  %> 
   <%end%>
