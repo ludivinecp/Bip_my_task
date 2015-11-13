@@ -1,6 +1,6 @@
 # Bip_my_task-
 
-Sign up and plan your task in your schedule.
+Sign up and plan your tasks in your schedule.
 
 
 => Work in progress
