@@ -1,6 +1,6 @@
 to_do  
 
-# mettre des catégories d'event (avec picto ds helper) + liste déroulante dans form
+# mettre des catégories d'events (avec picto ds helper) + liste déroulante dans form
 # Flèches next (passe au dernier au lieu de défiler un par un)
 # delete event qd date passée et quand clique sur bouton delete
 # rajouter une api

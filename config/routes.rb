@@ -18,11 +18,9 @@ Rails.application.routes.draw do
 
   get 'tasks/create'
 
-  get 'tasks/delete'
-
-  get 'tasks/destroy'
-
   resources :tasks
+
+  get '/tasks/:id/delete' => 'tasks#delete', as: :delete_task
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
