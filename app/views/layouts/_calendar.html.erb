@@ -1,0 +1,9 @@
+_calendar.html.erb
+
+
+<%= week_calendar tasks: tasks, previous_link: events_ajax_previous_link, next_link: events_ajax_next_link do |date, tasks| %>
+<%= date %>
+
+ </br><a href="/tasks/<%= @tasks.find_by(start_time: date).try(:name)%>">
+ <%= @tasks.find_by(start_time: date).try(:name) %></a>
+<% end %>

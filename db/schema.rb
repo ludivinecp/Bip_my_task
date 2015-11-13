@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151112144433) do
+ActiveRecord::Schema.define(version: 20151112232308) do
 
   create_table "categories", force: :cascade do |t|
     t.string   "nom"
@@ -21,7 +21,7 @@ ActiveRecord::Schema.define(version: 20151112144433) do
 
   create_table "tasks", force: :cascade do |t|
     t.string   "name"
-    t.date     "date"
+    t.date     "start_time"
     t.time     "hour"
     t.string   "place"
     t.string   "description"

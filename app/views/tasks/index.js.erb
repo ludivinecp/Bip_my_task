@@ -1,0 +1,2 @@
+index.js.erb
+$("#tasks_calendar").html("<%= escape_javascript render(partial: "calendar", locals: {tasks: @tasks}) %>");

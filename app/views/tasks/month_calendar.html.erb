@@ -1,9 +1,4 @@
-<%= month_calendar tasks: @tasks do |date, task| %>
-  <%= date %>
-
-  <% @tasks.each do |task| %>
-    <div>
-      <a href="/tasks/<%= task.id%>"><%= task.name%></a>
-    </div>
-  <% end %>
+<%= month_calendar do |date| %>
+<%=date%>
+ </br><a href="/tasks/<%= @tasks.find_by(start_time: date).try(:name)%>"><%= @tasks.find_by(start_time: date).try(:name) %></a>
 <% end %>

@@ -1,5 +1,5 @@
 class Task < ActiveRecord::Base
-	 validates_presence_of :name, :date
+	 validates_presence_of :name, :start_time
 	 belongs_to :category 
 	 belongs_to :user
 	  
@@ -7,24 +7,19 @@ class Task < ActiveRecord::Base
 	 after_validation :geocode        
 
 def previous
-  Task.where(["date < ?", date]).last
+  Task.where(["start_time < ?", start_time]).last
 end
 
 def next
-  Task.where(["date > ?", date]).first
+  Task.where(["start_time > ?", start_time]).first
 end
 
 def finish
 	@task = Task.find(params[:id])
-	if @task.date < Date.now
+	if @task.start_time < start_time.now
 		@task.delete
 	end
 end
 
- def start_time
- 	@tasks = Task.all
- 	binding.pry
- 	@tasks.date 
-    end
 end
 

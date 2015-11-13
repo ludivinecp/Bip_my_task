@@ -1,5 +1,5 @@
-week_calendar.html.erb
+<%= week_calendar do |date| %>
 
-<%= week_calendar (attribute: :date) do |date| %>
-  <%= date %>
+ </br><a href="/tasks/<%= @tasks.find_by(start_time: date).try(:name)%>"><%= @tasks.find_by(start_time: date).try(:name) %></a>
 <% end %>
+
