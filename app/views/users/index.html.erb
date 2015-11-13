@@ -1,6 +1,7 @@
 <div class="flash"><%= flash[:destroy] %></div>
 
 <p> Liste des events </p>
+<%= link_to "view in calendar", tasks_month_calendar_path %>
  	<% if @tasks.empty?%>
     <p> Vous n'avez pas encore de tâches </p>
     <% else %>

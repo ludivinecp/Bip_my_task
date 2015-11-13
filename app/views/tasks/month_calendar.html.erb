@@ -1,4 +1,3 @@
-<%= month_calendar do |date| %>
-<%=date%>
- </br><a href="/tasks/<%= @tasks.find_by(start_time: date).try(:name)%>"><%= @tasks.find_by(start_time: date).try(:name) %></a>
-<% end %>
+<div id="events_calendar">	
+<%= render partial: "layouts/calendar", locals: {tasks: @tasks} %>
+</div>
